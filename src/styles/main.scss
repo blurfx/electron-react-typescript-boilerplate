@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0px 16px;
+    min-height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+$color1:  #0077b5;
+$color2:  #eeeeee;
+
+button {
+    background-color: $color1;
+    color:$color2;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    border-style: none;
+}
+
+.layout {
+    
+    .sidebar {
+        padding: 16px;
+        grid-column: 1;
+        background-color: $color1;
+        a {
+            color: $color2;
+            display: inline-block;
+            margin: auto 1em;
+        }
+    }
+    .body {
+        padding: 16px;
+        min-height: 600px;
+        grid-column: 2;
+        background-color: $color2;
+    }
+}
